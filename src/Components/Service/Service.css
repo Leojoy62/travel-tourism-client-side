@@ -1,0 +1,11 @@
+.service img{
+    width: 300px;
+    height: auto;
+}
+.service{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    
+}
