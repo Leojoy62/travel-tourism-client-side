@@ -23,12 +23,7 @@ const Packages = () => {
                             service={service}
                         ></Service>)
                     }
-                    {
-                        services.map(service => <PlaceOrder
-                            key={service.name}
-                            service={service}
-                        ></PlaceOrder>)
-                    }
+
                 </div>
             </Container>
 
