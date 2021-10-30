@@ -1,4 +1,3 @@
-
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
@@ -9,6 +8,9 @@ import AuthProvider from './contexts/AuthProvider';
 import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
+import Packages from './Components/Packages/Packages';
+import MyOrder from './Components/MyOrder/MyOrder';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -26,7 +28,16 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <PrivateRoute path="/placeorder">
+            <Route path="/myorder">
+              <MyOrder></MyOrder>
+            </Route>
+            <Route path="/packages">
+              <Packages></Packages>
+            </Route>
+            <Route path="/about">
+              <AboutUs></AboutUs>
+            </Route>
+            <PrivateRoute path="/placeorder/:packageName">
               <PlaceOrder></PlaceOrder>
             </PrivateRoute>
             <Route path="*">
