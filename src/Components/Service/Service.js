@@ -7,10 +7,11 @@ const Service = (props) => {
     const { name, image, description } = props.service
     return (
         <div className="service">
-            <div>
+            <div className="service-card">
                 <img src={image} alt="" />
-                <p>{name}</p>
+                <p><b className="service-name">{name}</b></p>
                 <p>{description}</p>
+
                 <Link to={`/placeorder/${name}`}>
                     <Button variant="warning">Book Now</Button>
                 </Link>

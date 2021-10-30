@@ -1,0 +1,10 @@
+.lj-travels{
+    color: green;
+    font-weight: 700;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}

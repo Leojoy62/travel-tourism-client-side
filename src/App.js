@@ -11,6 +11,8 @@ import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 import Packages from './Components/Packages/Packages';
 import MyOrder from './Components/MyOrder/MyOrder';
 import AboutUs from './Components/AboutUs/AboutUs';
+import ManageOrder from './Components/ManageOrder/ManageOrder';
+import AddNewOrder from './Components/AddNewOrder/AddNewOrder';
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/myorder">
+            <Route path="/myorder/:packageId">
               <MyOrder></MyOrder>
             </Route>
             <Route path="/packages">
@@ -36,6 +38,12 @@ function App() {
             </Route>
             <Route path="/about">
               <AboutUs></AboutUs>
+            </Route>
+            <Route path="/manageorder">
+              <ManageOrder></ManageOrder>
+            </Route>
+            <Route path="/addnewpackage">
+              <AddNewOrder></AddNewOrder>
             </Route>
             <PrivateRoute path="/placeorder/:packageName">
               <PlaceOrder></PlaceOrder>

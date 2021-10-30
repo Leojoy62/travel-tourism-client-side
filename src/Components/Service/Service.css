@@ -6,6 +6,16 @@
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     margin: auto;
     
+    
+}
+.service-card{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+.service-name{
+    font-size: 30px;
 }

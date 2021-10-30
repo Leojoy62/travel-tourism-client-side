@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
+import PlaceOrder from '../PlaceOrder/PlaceOrder';
 import Service from '../Service/Service';
 
 const Packages = () => {
@@ -22,8 +23,15 @@ const Packages = () => {
                             service={service}
                         ></Service>)
                     }
+                    {
+                        services.map(service => <PlaceOrder
+                            key={service.name}
+                            service={service}
+                        ></PlaceOrder>)
+                    }
                 </div>
             </Container>
+
         </>
     );
 };

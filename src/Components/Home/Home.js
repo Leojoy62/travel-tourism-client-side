@@ -51,6 +51,35 @@ const Home = () => {
                     }
                 </div>
             </Container>
+
+            <Container className="sec-1 my-5 ">
+                <div>
+                    <img src="https://media.cntraveler.com/photos/605cee7a63ce0a17d417e8e3/3:4/w_2799,h_3732,c_limit/WomensHikingBackpacks-2021-GettyImages-594201133.jpg" alt="" />
+                </div>
+                <div>
+                    <h1>A Simply Perfect Place <br />
+                        To Get Lost</h1>
+                    <p>Treat yourself with a journey to your inner self. <br /> Visit a mystique Tibet and <br /> start your spiritual adventure. We promise, <br /> you’ll enjoy every step you make.</p>
+                </div>
+            </Container>
+            <div>
+                <h3 className="sec-2-head">Life Is All About</h3>
+            </div>
+            <Container className="sec-2 mb-5">
+
+                <div>
+                    <h4>Challence</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyZXa9jrcOs41m9cpcM1sFEfPmpYk5tS5e4A&usqp=CAU" alt="" />
+                </div>
+                <div>
+                    <h4>Adventure</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiygWKzhkWEfSKP8nY-vrRi8o1zbYFTsv0Fw&usqp=CAU" alt="" />
+                </div>
+                <div>
+                    <h4>Success</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ZTmRMV_gevY-EkICt25jkhd_qc5elNkPjQ&usqp=CAU" alt="" />
+                </div>
+            </Container>
         </>
     );
 };
