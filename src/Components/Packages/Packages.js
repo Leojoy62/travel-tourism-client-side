@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import PlaceOrder from '../PlaceOrder/PlaceOrder';
+
 import Service from '../Service/Service';
 
 const Packages = () => {

@@ -6,11 +6,11 @@ import { Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../hooks/useAuth';
 
-const PlaceOrder = (props) => {
+const PlaceOrder = () => {
 
 
 
-    const { packageName } = useParams();
+    const { packageName, packageId } = useParams();
     const { user } = useAuth()
     const nameRef = useRef();
     const emailRef = useRef();
@@ -43,7 +43,7 @@ const PlaceOrder = (props) => {
                 <input placeholder="Phone" ref={phoneRef} {...register("Phone", { required: true })} />
                 <br />
 
-                <Link to={`/myorder/`}>
+                <Link to={`/myorder/${packageId}`}>
                     <br />
                     <Button type="submit" variant="warning">Confirm</Button>
                 </Link>
